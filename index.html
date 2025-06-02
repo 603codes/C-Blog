@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="icon.svg" type="image/icon type">
+</head>
+<body>
+    <button class="cpb-hamburger" id="cpb-hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="cpb-container">
+        <aside class="cpb-sidebar" id="cpb-sidebar">
+            <div class="cpb-sidebar-header">
+                <i class="fas fa-code"></i>
+                <span>C Programming Blog</span>
+            </div>
+            <nav class="cpb-nav">
+                <a class="cpb-nav-link" onclick="scrollToSection('PreprocessorDirectives')"><i class="fas fa-hashtag"></i> Preprocessor Directives</a>
+                <a class="cpb-nav-link" onclick="scrollToSection('Tokens')"><i class="fas fa-cube"></i> Tokens in C</a>
+                <a class="cpb-nav-link" onclick="scrollToSection('FormattedIO')"><i class="fas fa-keyboard"></i> Formatted I/O Functions</a>
+                <a class="cpb-nav-link" onclick="scrollToSection('UnformattedIO')"><i class="fas fa-terminal"></i> Unformatted I/O Functions</a>
+                <a class="cpb-nav-link" onclick="scrollToSection('Switch')"><i class="fas fa-random"></i> Control Flow</a>
+                <a class="cpb-nav-link" onclick="scrollToSection('Arraytypes')"><i class="fas fa-th"></i> Arrays</a>
+                <a class="cpb-nav-link" onclick="scrollToSection('MatrixOperations')"><i class="fas fa-th-large"></i> Array Operations</a>
+                <a class="cpb-nav-link" onclick="scrollToSection('Transpose')"><i class="fas fa-exchange-alt"></i> Transpose</a>
+                <a class="cpb-nav-link" onclick="scrollToSection('Patterns')"><i class="fas fa-border-all"></i> Pattern Printing</a>
+                <a class="cpb-nav-link" onclick="scrollToSection('StringFunctions')"><i class="fas fa-font"></i> String Handling Functions</a>
+            </nav>
+        </aside>
+        <main class="cpb-content">
+            <p id="intro">Introduction to C</p><hr>
+            <p class="cpb-paragraph">C is a powerful, low-level programming language that has been the backbone of modern computing for decades. Known for its efficiency and control over system resources, it remains a favorite for operating systems, embedded systems, and performance-critical applications. Whether you're a beginner or an experienced coder, mastering C opens doors to deeper programming insights.</p>
+            <p class="cpb-paragraph">In this blog, we'll cover the following:
+                <ul>
+                    <li>Preprocessor Directives</li>
+                    <li>Tokens in C</li>
+                    <li>Formatted I/O Functions</li>
+                    <li>Unformatted I/O Functions</li>
+                    <li>Control Flow</li>
+                    <li>Arrays</li>
+                    <li>Array Operations</li>
+                    <li>Pattern Printing</li>
+                    <li>String Handling Functions</li>
+                </ul>
+            </p>
+
+            <div id="PreprocessorDirectives">
+                <p class="cpb-heading">1. Types of pre-processor directives</p>
+                <p class="cpb-paragraph">Preprocessor directives in C are commands that begin with # and are processed before compilation. They handle tasks like including files (#include), defining macros (#define), and conditional compilation (#ifdef, #ifndef). These directives help in code modularity, reusability, and conditional compilation, making programs more flexible and efficient.</p>
+                <p class="cpb-example">Example:</p>
+                <img src="img/codes/PreprocessorDirectives.png" alt="preprocessor" class="cpb-image">
+
+                <p class="cpb-example">Output:</p>
+                <img src="img/outputs/OutputPreprocessorDirectives.png" alt="preprocessor" class="cpb-image">
+            </div>
+
+            <div id="Tokens">
+                <p class="cpb-heading">2. Tokens in C</p>
+                <p class="cpb-paragraph">Tokens in C are the smallest individual units of a program, serving as the building blocks for writing code. They include keywords (like int, return), identifiers (variable names), constants (numeric or character values), operators (like +, -, *), and punctuation symbols (like ;, {}, []). Understanding tokens is essential for parsing and compiling C programs, as they define the structure and meaning of the code. Each token plays a specific role in the syntax and semantics of the language, enabling developers to create functional programs.
+                </p>
+                <p class="cpb-example">Example:</p>
+                <img src="img/codes/Tokens.png" alt="preprocessor" class="cpb-image">
+
+                <p class="cpb-example">Output:</p>
+                <img src="img/outputs/OutputTokens.png" alt="preprocessor" class="cpb-image">
+            </div>
+            
+            <div id="FormattedIO">
+                <p class="cpb-heading">3. Formatted I/O Functions</p>
+                <p class="cpb-paragraph">Formatted I/O functions in C, such as printf() and scanf(), are essential for handling input and output operations with specific formatting. These functions allow you to control how data is displayed or read, using format specifiers like %d for integers, %f for floating-point numbers, and %s for strings. For example, printf("Value: %d", value) prints an integer with a label, while scanf("%d", &value) reads an integer from user input. These functions are crucial for creating user-friendly interfaces and ensuring data is presented in a clear and organized manner.
+                </p>
+                <p class="cpb-example">Example:</p>
+                <img src="img/codes/FormattedIO.png" alt="preprocessor" class="cpb-image">
+
+                <p class="cpb-example">Output:</p>
+                <img src="img/outputs/OutputFormattedIO.png" alt="preprocessor" class="cpb-image">
+            </div>
+
+
+            <div id="UnformattedIO">
+                <p class="cpb-heading">4. Unformatted I/O Functions</p>
+                <p class="cpb-paragraph">Unformatted I/O functions in C, such as getch(), getche(), getchar(), puts(), and gets(), are used for reading and writing data without specific formatting. These functions are particularly useful for handling character input and output directly. For instance, getch() reads a single character from the keyboard without echoing it to the screen, while puts() outputs a string followed by a newline. These functions are often used in scenarios where simple input/output operations are needed, such as in console applications or when dealing with character-based data.
+                </p>
+                <p class="cpb-example">Example:</p>
+                <img src="img/codes/UnformattedIO.png" alt="preprocessor" class="cpb-image">
+
+                <p class="cpb-example">Output:</p>
+                <img src="img/outputs/OutputUnformattedIO.png" alt="preprocessor" class="cpb-image">
+            </div>
+
+
+            <div id="Switch">
+                <p class="cpb-heading">5. Control Flow </p>
+                <p class="cpb-paragraph">Control flow in C determines the execution order of statements in a program. The switch-case statement is used for multi-way branching, where a variable is compared against multiple case values, executing the matching block (e.g., switch(choice) { case 1: printf("One"); break; }). It is useful when handling multiple conditions efficiently. The goto statement allows jumping to a labeled part of the code (goto label;), which can sometimes simplify loops or error handling but is generally discouraged due to reduced readability and maintainability. Both provide ways to control program execution based on conditions.
+                </p>
+                <p class="cpb-example">Example:</p>
+                <img src="img/codes/Switch.png" alt="preprocessor" class="cpb-image">
+
+                <p class="cpb-example">Output:</p>
+                <img src="img/outputs/OutputSwitch.png" alt="preprocessor" class="cpb-image">
+            </div>
+
+            <div id="Arraytypes">
+                <p class="cpb-heading">6. Arrays </p>
+                <p class="cpb-paragraph">In C, an array is a collection of variables of the same type, stored in contiguous memory locations. You can think of it as a way to group multiple variables under a single name, and you access each element using an index. Arrays are useful for storing and manipulating large sets of data efficiently, like a list of numbers or characters. They provide a simple and powerful way to work with data structures in C.
+                </p>
+                <p class="cpb-example">Example:</p>
+                <img src="img/codes/ArrayTypes.png" alt="preprocessor" class="cpb-image">
+
+                <p class="cpb-example">Output:</p>
+                <img src="img/outputs/OutputArrayTypes.png" alt="preprocessor" class="cpb-image">
+            </div>
+
+
+
+            <div id="MatrixOperations">
+                <p class="cpb-heading">7. Array Operations </p>
+                <p class="cpb-paragraph">In C, array operations are fundamental for manipulating collections of data. Common operations include traversing arrays to access or modify elements, searching for specific values using algorithms like linear or binary search, and sorting arrays using techniques such as bubble sort or quicksort. These operations are essential for efficiently managing data in various applications, from simple programs to complex algorithms. Mastering array operations is crucial for 11th-grade exams, as they form the basis for understanding more advanced data structures and algorithms in C programming.
+                </p>
+                <p class="cpb-example">Example:</p>
+                <img src="img/codes/MatrixOperations.png" alt="preprocessor" class="cpb-image">
+
+                <p class="cpb-example">Output:</p>
+                <img src="img/outputs/OutputMatrixOperations.png" alt="preprocessor" class="cpb-image">
+            </div>
+
+
+            <div id="Transpose">
+                <p class="cpb-heading">8. Transpose of an Array </p>
+                <p class="cpb-paragraph">In C, the transpose of a matrix is a fundamental operation that involves flipping the matrix over its diagonal, effectively swapping rows and columns. This operation is crucial in various applications, such as image processing and linear algebra. To compute the transpose, you typically create a new matrix where the element at position (i, j) in the original matrix becomes the element at position (j, i) in the transposed matrix. Understanding how to implement this operation is essential for 11th-grade exams, as it demonstrates proficiency in array manipulation and algorithm design.
+                </p>
+                <p class="cpb-example">Example:</p>
+                <img src="img/codes/Transpose.png" alt="preprocessor" class="cpb-image">
+
+                <p class="cpb-example">Output:</p>
+                <img src="img/outputs/OutputTranspose.png" alt="preprocessor" class="cpb-image">
+            </div>
+
+
+            <div id="Patterns">
+                <p class="cpb-heading">9. Patterns </p>
+                <p class="cpb-paragraph">In C, creating patterns is a common practice for students to improve their understanding of loops, conditionals, and array manipulation. Patterns often involve using nested loops (for rows and columns) to print specific sequences of characters or numbers, and this is a vital skill for your 11th-grade exams.
+                </p>
+                <p class="cpb-example">Example:</p>
+                <img src="img/codes/Patterns.png" alt="preprocessor" class="cpb-image">
+
+                <p class="cpb-example">Output:</p>
+                <img src="img/outputs/OutputPatterns.png" alt="preprocessor" class="cpb-image">
+            </div>
+
+
+
+            <div id="StringFunctions">
+                <p class="cpb-heading">10. String Handling Functions </p>
+                <p class="cpb-paragraph">In C, string handling functions are essential for manipulating and processing strings, which are arrays of characters. These functions include operations like finding the length of a string (strlen), copying one string to another (strcpy), concatenating two strings (strcat), comparing two strings (strcmp), and searching for a character within a string (strchr). Understanding these functions is crucial for efficiently working with text data in C programs, especially in the context of 11th-grade exams where string manipulation is a common topic.
+                </p>
+                <p class="cpb-example">Example:</p>
+                <img src="img/codes/StringFunctions.png" alt="preprocessor" class="cpb-image">
+
+                <p class="cpb-example">Output:</p>
+                <img src="img/outputs/OutputStringFunctions.png" alt="preprocessor" class="cpb-image">
+            </div>
+
+
+        </main>
+    </div>
+    <footer>
+        <div class="cpb-social-links">
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-fire "></i></a>
+        </div>
+        <p>&copy; 2025 Sulav Poudel. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
